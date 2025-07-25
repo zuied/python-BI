@@ -71,6 +71,31 @@ col3.metric("🔥 Produk Terlaris", produk_terlaris)
 
 st.markdown("---")
 
+# --- SISA STOK ---
+st.markdown("---")
+st.subheader("📦 Informasi Sisa Stok per Produk")
+
+# Hitung total terjual per produk
+terjual = df.groupby('produk')['qty'].sum()
+stok_awal = df.groupby('produk')['stok_awal'].first()
+
+# Hitung sisa stok
+sisa_stok = stok_awal - terjual
+stok_df = pd.DataFrame({
+    'Stok Awal': stok_awal,
+    'Terjual': terjual,
+    'Sisa Stok': sisa_stok
+}).fillna(0).astype(int)
+
+st.dataframe(stok_df)
+
+# Alert jika stok rendah
+stok_habis = stok_df[stok_df['Sisa Stok'] <= 5]
+if not stok_habis.empty:
+    st.warning("⚠️ Ada produk dengan stok menipis (≤ 5 unit)")
+    st.dataframe(stok_habis)
+
+
 # --- GRAFIK PENJUALAN PER BULAN ---
 penjualan_bulanan = df_filter.groupby('bulan')['total'].sum().reset_index()
 fig1 = px.line(penjualan_bulanan, x='bulan', y='total', markers=True, title='📈 Penjualan per Bulan')
