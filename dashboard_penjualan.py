@@ -112,16 +112,24 @@ fig3 = px.bar(wilayah_chart, x='wilayah', y='total', title='🌍 Penjualan per W
 st.plotly_chart(fig3, use_container_width=True)
 
 
-
 # --- TOP 10 PRODUK ---
-top_produk = (
-    df_filter.groupby('produk')['total'].sum()
-    .sort_values(ascending=False)
-    .head(10)
-    .reset_index()
-)
-fig4 = px.bar(top_produk, x='produk', y='total', title='🏆 Top 10 Produk Terlaris')
-st.plotly_chart(fig4, use_container_width=True)
+# Konversi total ke numerik
+df_filter['total'] = pd.to_numeric(df_filter['total'], errors='coerce')
+df_filter = df_filter.dropna(subset=['total'])
+
+# Cek & tampilkan grafik jika data ada
+if df_filter.empty:
+    st.warning("Tidak ada data untuk ditampilkan di grafik produk terlaris.")
+else:
+    top_produk = (
+        df_filter.groupby('produk')['total'].sum()
+        .sort_values(ascending=False)
+        .head(10)
+        .reset_index()
+    )
+    fig4 = px.bar(top_produk, x='produk', y='total', title='🏆 Top 10 Produk Terlaris')
+    st.plotly_chart(fig4, use_container_width=True)
+
 
 
 # Download Excel
