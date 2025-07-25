@@ -6,9 +6,21 @@ from xhtml2pdf import pisa
 
 st.set_page_config(page_title="Dashboard Penjualan", layout="wide")
 
-# --- LOAD DATA ---
+# --- LOAD & FIX DATA ---
 df = pd.read_csv("penjualan.csv")
 df['tanggal'] = pd.to_datetime(df['tanggal'], errors='coerce')
+
+# Pastikan qty dan harga numerik
+df['qty'] = pd.to_numeric(df['qty'], errors='coerce')
+df['harga'] = pd.to_numeric(df['harga'], errors='coerce')
+
+# Jika kolom total tidak valid, hitung ulang
+if 'total' not in df.columns or df['total'].dropna().astype(str).str.contains(r'[^0-9]').any():
+    df['total'] = df['qty'] * df['harga']
+else:
+    df['total'] = df['total'].astype(str).str.replace('.', '', regex=False)
+    df['total'] = pd.to_numeric(df['total'], errors='coerce')
+
 
 # Ambil tanggal awal & akhir
 min_date = df['tanggal'].min()
