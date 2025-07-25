@@ -128,7 +128,18 @@ else:
         .reset_index()
     )
     fig4 = px.bar(top_produk, x='produk', y='total', title='🏆 Top 10 Produk Terlaris')
-    st.plotly_chart(fig4, use_container_width=True)
+
+fig4.update_traces(texttemplate='%{y:,}', textposition='outside')
+
+fig4.update_layout(
+    yaxis_tickformat=',',
+    yaxis_title='Total Penjualan (Rp)',
+    xaxis_title='Produk',
+    title_x=0.5
+)
+
+st.plotly_chart(fig4, use_container_width=True)
+
 
 
 
