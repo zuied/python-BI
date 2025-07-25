@@ -2,15 +2,15 @@ tanggal,produk,kategori,qty,harga,jumlah,total,stok_awal,customer,wilayah
 1/1/2025,Fanta Stroberi 500ml,Minuman,60,6261,30000,30000,200,Budi,Jakarta
 1/2/2025,Nabati Cheese 1,Biskuit,46,6856,5000,5000,200,Ani,Bandung
 1/3/2025,Bakso Instan,Makanan,67,5152,345184,345184,200,Rudi,Surabaya
-1/4/2025,Kue Pia Cap Mangkok,Makanan,51,9803,499953,499953,200,Abar,Bandung
+1/4/2025,Kue Pia Cap Mangkok 1,Makanan,51,9803,499953,499953,200,Abar,Bandung
 1/5/2025,Roma Malkist,Biskuit,50,9186,459300,459300,200,Hadi Cua,Jakarta
 1/6/2025,Tango Wafer Vanila 1,Biskuit,17,6661,113237,113237,200,Babe,Bali 
 1/7/2025,Aqua Botol 600ml,Minuman,19,7841,148979,148979,200,Hana,Surabaya
 1/8/2025,Susu Kental Manis Frisian Flag,Kopi dan Susu,64,7018,449152,449152,200,Mana,Jakarta
 1/9/2025,Susu Kental Manis Frisian Flag,Kopi dan Susu,70,10228,715960,715960,200,Ani,Bandung
-1/10/2025,Kue Pia Cap Mangkok,Makanan,58,6634,384772,384772,200,Fai,Bandung
+1/10/2025,Kue Pia Cap Mangkok 2,Makanan,58,6634,384772,384772,200,Fai,Bandung
 1/11/2025,Torabika Creamy Latte 1,Kopi dan Susu,86,7157,615502,615502,200,Rudi,Jakarta
-1/12/2025,Roti Tawar Sari Roti,Makanan,88,5566,489808,489808,200,Abar,Bandung
+1/12/2025,Roti Tawar Sari Roti  Susu,Makanan,88,5566,489808,489808,200,Abar,Bandung
 1/13/2025,Floridina,Minuman,52,3855,200460,200460,200,Hadi Cua,Surabaya
 1/14/2025,Torabika Creamy Latte 2,Kopi dan Susu,14,5361,75054,75054,200,Babe,Bandung
 1/15/2025,Ades Air Mineral,Minuman,53,7444,394532,394532,200,Hana,Jakarta
@@ -22,12 +22,12 @@ tanggal,produk,kategori,qty,harga,jumlah,total,stok_awal,customer,wilayah
 1/21/2025,Ayam Kaleng 100 g,Makanan,46,6012,276552,276552,200,Fai,Surabaya
 1/22/2025,Teh Pucuk Harum,Minuman,42,4640,194880,194880,200,Rudi,Jakarta
 1/23/2025,Astor Coklat 1,Biskuit,76,4867,369892,369892,200,Abar,Bandung
-1/24/2025,Mizone Lychee Lemon 1,Minuman,98,4990,489020,489020,200,Hadi Cua,Bandung
+1/24/2025,Mizone Lychee Lemon 3,Minuman,98,4990,489020,489020,200,Hadi Cua,Bandung
 1/25/2025,Mizone Lychee Lemon 2,Minuman,20,8983,179660,179660,200,Babe,Jakarta
 1/26/2025,Nugget So Nice 1,Makanan,28,9122,255416,255416,200,Abar,Bandung
 1/27/2025,Torabika Creamy Latte 1,Kopi dan Susu,47,4518,212346,212346,200,Abi,Surabaya
 1/28/2025,Aqua Botol 600ml,Minuman,51,7168,365568,365568,200,Hasa,Bandung
-1/29/2025,Kue Pia Cap Mangkok,Makanan,39,6827,266253,266253,200,Bana,Jakarta
+1/29/2025,Kue Pia Cap Mangkok 1,Makanan,39,6827,266253,266253,200,Bana,Jakarta
 1/30/2025,Sprite Botol,Minuman,23,9135,210105,210105,200,Hui,Bali 
 1/31/2025,Fanta Stroberi 250ml,Minuman,73,7270,530710,530710,200,Loma,Surabaya
 2/1/2025,Good Time Coklat 1,Biskuit,89,8130,723570,723570,200,Nana,Jakarta
@@ -48,12 +48,12 @@ tanggal,produk,kategori,qty,harga,jumlah,total,stok_awal,customer,wilayah
 2/16/2025,Nugget So Nice 2,Makanan,78,5432,423696,423696,200,Hui,Bandung
 2/17/2025,Biskuat Energi,Biskuit,75,3854,289050,289050,200,Loma,Bandung
 2/18/2025,Coca-Cola Kaleng,Minuman,69,8649,596781,596781,200,Nana,Jakarta
-2/19/2025,Torabika Creamy Latte 1,Kopi dan Susu,86,8472,728592,728592,200,Badu,Bandung
+2/19/2025,Torabika Creamy Latte 2,Kopi dan Susu,86,8472,728592,728592,200,Badu,Bandung
 2/20/2025,Good Time Coklat 3,Biskuit,61,5403,329583,329583,200,Jaja,Surabaya
 2/21/2025,Fanta Stroberi 1L,Minuman,84,6607,554988,554988,200,Maba,Jakarta
 2/22/2025,Ayam Kaleng 200 g,Makanan,93,6522,606546,606546,200,Haci,Bandung
 2/23/2025,Susu Kental Manis Frisian Flag,Kopi dan Susu,18,5944,106992,106992,200,Bada,Bandung
-2/24/2025,Roti Tawar Sari Roti,Makanan,51,7911,403461,403461,200,Kalo,Surabaya
+2/24/2025,Roti Tawar Sari Roti Keju,Makanan,51,7911,403461,403461,200,Kalo,Surabaya
 2/25/2025,Susu Bendera,Kopi dan Susu,37,6924,256188,256188,200,Bana,Jakarta
 2/26/2025,Fanta Stroberi 350ml,Minuman,17,4675,79475,79475,200,Gia,Bandung
 2/27/2025,Ades Air Mineral,Minuman,88,5940,522720,522720,200,Juli,Bandung
@@ -93,9 +93,9 @@ tanggal,produk,kategori,qty,harga,jumlah,total,stok_awal,customer,wilayah
 4/2/2025,Teh Pucuk Harum,Minuman,41,9819,402579,402579,200,Ani,Surabaya
 4/3/2025,Jus Buavita Jeruk,Minuman,52,6224,323648,323648,200,Rudi,Bandung
 4/4/2025,Roma Malkist,Biskuit,77,8756,674212,674212,200,Abar,Surabaya
-4/5/2025,Mizone Lychee Lemon 1,Minuman,85,5524,469540,469540,200,Hadi Cua,Jakarta
+4/5/2025,Mizone Lychee Lemon 4,Minuman,85,5524,469540,469540,200,Hadi Cua,Jakarta
 4/6/2025,Tango Wafer Vanila 1,Biskuit,64,7622,487808,487808,200,Babe,Bandung
 4/7/2025,Fanta Stroberi 5L,Minuman,10,8569,85690,85690,200,Hana,Bandung
 4/8/2025,Coca-Cola Kaleng,Minuman,12,8311,99732,99732,200,Mana,Jakarta
-4/9/2025,Kue Pia Cap Mangkok,Makanan,58,6841,396778,396778,200,Ani,Bandung
+4/9/2025,Kue Pia Cap Mangkok 2,Makanan,58,6841,396778,396778,200,Ani,Bandung
 4/10/2025,Sarden ABC,Makanan,96,5208,499968,499968,200,Fai,Surabaya
